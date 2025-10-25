@@ -1,1 +1,170 @@
-Pagina web de bruno mateos
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Mateos - CV</title>
+    <style>
+        :root {
+            --primary-color: #1a1a2e;
+            --secondary-color: #16213e;
+            --accent-color: #4a90e2;
+            --text-color: #e6e6e6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-name {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        .profile-title {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            color: #8a8a8a;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="profile-name">Bruno Mateos</h1>
+        <p class="profile-title">Consultor & Data Science Student</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p>
+                Soy un consultor apasionado por el análisis de datos y la tecnología, actualmente ampliando mis conocimientos 
+                a través de un Máster en Data Science. Mi objetivo es combinar mi experiencia en consultoría con las últimas 
+                técnicas de análisis de datos para proporcionar soluciones innovadoras y basadas en datos.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formación Académica</h2>
+            <ul>
+                <li>Máster en Data Science (En curso)</li>
+                <li>Formación previa en Consultoría y Gestión de Proyectos</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Experiencia Profesional</h2>
+            <div class="experience-item">
+                <h3>Consultor</h3>
+                <ul>
+                    <li>Asesoramiento estratégico a clientes en diversos sectores</li>
+                    <li>Gestión y optimización de proyectos empresariales</li>
+                    <li>Análisis de datos para la toma de decisiones</li>
+                    <li>Desarrollo e implementación de soluciones personalizadas</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Consultoría Estratégica</div>
+                <div class="skill-item">Análisis de Datos</div>
+                <div class="skill-item">Gestión de Proyectos</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Business Intelligence</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Español - Nativo</div>
+                <div class="skill-item">Inglés - Profesional</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 email@example.com
+                </div>
+                <div class="contact-item">
+                    📱 +34 XXX XXX XXX
+                </div>
+                <div class="contact-item">
+                    📍 Madrid, España
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
